@@ -28,13 +28,7 @@ add_action( 'plugins_loaded', 'mfpd_load' );
 function register_mysettings() {
         register_setting( 'mfpd-settings-group', 'mfpd_option_name' );
 }
- 
-function mfpd_create_menu() {
-        // add_menu_page('Hello World', 'MFPD Settings', 'administrator', __FILE__, 'mfpd_settings_page',plugins_url('/images/app.ico', __FILE__), 1);
-        add_menu_page('Hello World Plugin By Trọng', 'Hello World', 'administrator', __FILE__, 'mfpd_settings_page','dashicons-media-code', 2);
-        add_action( 'admin_init', 'register_mysettings' );
-}
-add_action('admin_menu', 'mfpd_create_menu'); 
+
  
 function mfpd_settings_page() {
 ?>
